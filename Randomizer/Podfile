@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+install! 'cocoapods',
+:deterministic_uuids => false
+
+def database
+    pod 'RealmSwift', '~>2.8.1'
+end
+
+
+target 'Randomizer' do
+    platform :ios, '9.0'
+    use_frameworks!
+    database
+end
+
