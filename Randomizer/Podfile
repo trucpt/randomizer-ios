@@ -5,11 +5,14 @@ install! 'cocoapods',
 def database
     pod 'RealmSwift', '~>2.8.1'
 end
-
+def ui
+    pod 'SDWebImage', '~>3.8.2'
+end
 
 target 'Randomizer' do
     platform :ios, '9.0'
     use_frameworks!
     database
+    ui
 end
 
