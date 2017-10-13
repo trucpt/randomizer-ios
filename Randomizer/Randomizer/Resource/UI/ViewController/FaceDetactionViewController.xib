@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FaceDetactionViewController" customModule="Randomizer" customModuleProvider="target">
+            <connections>
+                <outlet property="facesImageView" destination="pBA-Hk-yRk" id="jwV-kj-3rr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="bf4-ir-Uou"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIt-MW-Kvc">
+                    <rect key="frame" x="162.5" y="584" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="EvX-vV-Zt7"/>
+                        <constraint firstAttribute="width" constant="50" id="TeQ-nX-POn"/>
+                    </constraints>
+                    <state key="normal" image="faceDetection"/>
+                    <connections>
+                        <action selector="onClickFaceDetection:" destination="-1" eventType="touchUpInside" id="rx1-Ru-sKN"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pBA-Hk-yRk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pBA-Hk-yRk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4q3-B9-8c3"/>
+                <constraint firstItem="pBA-Hk-yRk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5w1-Fv-Owz"/>
+                <constraint firstItem="pBA-Hk-yRk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ef4-fA-6AR"/>
+                <constraint firstItem="MIt-MW-Kvc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hxx-HI-hQs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MIt-MW-Kvc" secondAttribute="bottom" constant="33" id="OC6-Hg-d9R"/>
+                <constraint firstItem="MIt-MW-Kvc" firstAttribute="top" secondItem="pBA-Hk-yRk" secondAttribute="bottom" constant="32" id="Tqd-OZ-Brv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-879.5" y="-177.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="faceDetection" width="171" height="171"/>
+    </resources>
+</document>

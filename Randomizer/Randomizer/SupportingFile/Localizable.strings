@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Randomizer
+
+  Created by nguyen ha on 10/11/17.
+  Copyright © 2017 Ace. All rights reserved.
+*/
+"c_ok" = "OK";
+"c_cancel" = "CANCEL";
+"c_title" = "Please type your name";

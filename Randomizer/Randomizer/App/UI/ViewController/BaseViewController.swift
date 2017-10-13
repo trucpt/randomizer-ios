@@ -13,9 +13,11 @@ class BaseViewController: UIViewController, UIViewControllerTransitioningDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = Const.colorGrey100
+        self.view.backgroundColor = Const.colorWhite
         if let _ = self.navigationController?.interactivePopGestureRecognizer {
             self.navigationController!.interactivePopGestureRecognizer!.delegate = self
         }
     }
+    
+    
 }
